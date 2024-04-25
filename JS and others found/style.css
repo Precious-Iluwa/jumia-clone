@@ -1,0 +1,44 @@
+main{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.side{
+    height:100vh;
+    /* width:10em; */
+    background:#888;
+    display: inline-block;
+}
+
+.part-b{
+    /* width:20em; */
+    display: inline-block;
+    background:#ccc;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.inner-part{
+    overflow-x: auto;
+    height:15em;
+    background:#aad;
+    position: relative;
+    width:100%;
+    padding:5%;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.inner-part div{
+    height:90%;
+    width:90%;
+    margin:5%;
+    background:#d55;
+    display: inline-block;
+}
+
+.part-c{
+    background:#222;
+}

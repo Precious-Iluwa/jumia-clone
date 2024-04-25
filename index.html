@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia | Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <!-- navbar starts here -->
+        <div class="navbar-wrapper">
+            <nav>
+                <div>
+                    <button id="icons"><img src="/assets/icon-close-menu.svg" alt="icon" id="open"></button>
+                    <!-- <img src="/assets/icon-menu.svg" alt="icon" id="close"> -->
+                </div>
+                <div id="hamburger">
+                    <button onclick="hamMenu()">                    
+                        <div class="ham-bar"></div>
+                        <div class="ham-bar"></div>
+                        <div class="ham-bar"></div>
+                    </button>
+                    <!-- <div class="ham-bar"></div>
+                    <div class="ham-bar"></div>
+                    <div class="ham-bar"></div> -->
+                    <div class="dropdown-content d-block" id="dropdown">
+                        <a href="#"><img src="/assets/apple-5-svgrepo-com.svg" alt="icon">Supermarket</a>
+                        <a href="#"><img src="/assets/beauty-svgrepo-com.svg" alt="icon">Health & Beauty</a>
+                        <a href="#"><img src="/assets/home-1-svgrepo-com.svg" alt="icon">Home & Office</a>
+                        <a href="#"><img src="/assets/appliances-cook-cooker-svgrepo-com.svg" alt="icon">Appliances</a>
+                        <a href="#"><img src="/assets/phone-svgrepo-com.svg" alt="icon">Phones & Tablets</a>
+                        <a href="#"><img src="/assets/laptop-svgrepo-com.svg" alt="icon">Computing</a>
+                        <a href="#"><img src="/assets/tv-television-svgrepo-com.svg" alt="icon">Electronics</a>
+                        <a href="#"><img src="/assets/shirt-svgrepo-com.svg" alt="icon">Fashion</a>
+                        <a href="#"><img src="/assets/baby-11-svgrepo-com.svg" alt="icon">Baby Products</a>
+                        <a href="#"><img src="/assets/game-9-svgrepo-com.svg" alt="icon">Gaming</a>
+                        <a href="#"><img src="/assets/sports-basketball-svgrepo-com.svg" alt="icon">Sporting Goods</a>
+                        <a href="#"><img src="/assets/three-dots-svgrepo-com.svg" alt="icon">Other Categories</a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="/assets/jumia.PNG" alt="logo">
+                </div>
+                <div class="search">
+                    <img src="/assets/search-interface-symbol.png" alt="">
+                    <input type="text" name="name" id="inp" placeholder="Search products, brands and categories">
+                    <a href="error.html" target="_blank"><button>search</button></a>
+                </div>
+                <div class="others">
+                    <div class="user-info">
+                        <img src="/assets/user-check-svgrepo-com.svg" alt="icon">
+                        <p>Hi, Iluwa</p>
+                        <img src="/assets/arrow-down-svgrepo-com.svg" alt="icon">
+                    </div>
+                    <div class="user-info">
+                        <img src="/assets/circle-question-svgrepo-com.svg" alt="">
+                        <p>Help</p>
+                        <img src="/assets/arrow-down-svgrepo-com.svg" alt="icon">
+                    </div>
+                    <div class="user-info">
+                        <img src="/assets/cart-shopping-svgrepo-com.svg" alt="icon">
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar ends here -->
+    </header>
+
+    <!-- main content starts here -->
+    <main>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="img-cont">
+                    <img id="product-image" src="" alt="Product Image">
+                </div>
+
+                <div class="img-info">
+                    <div class="first-section">
+                        <div class="cat-btn">
+                            <a href="error.html" target="_blank">Official Store</a>
+                            <a href="error.html" target="_blank">Payment On Delivery</a>
+                        </div>
+                        <div class="icon">
+                            <img src="/assets/heart-svgrepo-com.svg" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="img-info-text">
+                        <h1 id="product-title">Mens Casual Premium Slim <br>Fit T-Shirts </h1>
+                        <p>Brand: <a href="error.html" target="_blank">WD</a> <span>|</span> <a href="error.html" target="_blank">Similar gadgets from WD</a></p>
+                    </div>
+
+                    <div class="flash-sales-wrapper">
+                        <div class="flash-sales">
+                            <img src="/assets/flash-circle-svgrepo-com.svg" alt="icon">
+                            <p>Flash Sales</p>
+
+                            <div class="time countdown">
+                                <p>Time Left:</p> <span id="timer">00:00:00</span>
+                            </div>
+                        </div>
+
+                        <div class="price-wrapper">
+                            <div class="price-details">
+                                <h2 id="price">₦ 109,178</h2>
+                                <p id="reduced-price"><strike>₦ 109,178</strike></p>
+                                <p id="percentage">-29%</p>
+                            </div>
+                        </div>
+
+                        <div class="loader">
+                            <p>225 items left</p>
+                            <div class="outer">
+                                <div class="inner"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping">
+                        <p id="shipping-info">+ shipping from N 4,600 to <span>Okuokoko-Warri (Delta)</span></p>
+                        <div class="stars-rating">
+                            <div class="stars">
+                                <img src="/assets/star-fill-svgrepo-com.svg" alt="icon" id="active">
+                                <img src="/assets/star-fill-svgrepo-com.svg" alt="icon" id="active">
+                                <img src="/assets/star-fill-svgrepo-com.svg" alt="icon" id="active">
+                                <img src="/assets/star-fill-svgrepo-com.svg" alt="icon" id="active">
+                                <img src="/assets/star-fill-svgrepo-com.svg" alt="icon" id="not-active">
+
+                                <a href="#" id="verified">(23 verified ratings)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-btn">
+                        <a href="error.html" target="_blank"><img src="/assets/cart-plus-svgrepo-com.svg" alt="icon">Add Cart<p id="extra">Add Cart</p></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sharePromo">
+                <div class="share">
+                    <p>share this product</p>
+                    <img src="/assets/facebook-svgrepo-com.svg" alt="icon">
+                    <img src="/assets/twitter-svgrepo-com.svg" alt="icon">
+                </div>
+
+                <div class="promo">
+                    <p class="p-head">promotions</p>
+                    <div class="promo-content">
+                        <img src="/assets/star-circle-fill-svgrepo-com.svg" alt="icon">
+                        <a href="#">Call 0706000000 To Order</a>
+                    </div>
+                    <div class="promo-content">
+                        <img src="/assets/star-circle-fill-svgrepo-com.svg" alt="icon">
+                        <a href="#">Need extra money? Loan up to N500,000 on JumiaPay andriod app</a>
+                    </div>
+                    <div class="promo-content">
+                        <img src="/assets/star-circle-fill-svgrepo-com.svg" alt="icon">
+                        <a href="#">Enjoy cheaper shipping fee when you select a PickUp Station at checkout.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-descrip">
+                <h4>description</h4>
+                <div>
+                    <p id="description"></p>
+                </div>
+                <div class="report">
+                    <a href="#">Report Incorrect Product Information</a>
+                </div>
+            </div>
+       
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <h3 class="title">Products</h3>
+                <div class="sidebar-content">
+                    <div class="img">
+                        <img src="/assets/star-fill-svgrepo-com.svg" alt="icon">
+                    </div>
+                    <div class="texts">
+                        <p id="pro-duct">WD 2TB Elements Portable External Hard Drive - USB 3.0</p>
+                        <p class="different">Home and Office Gadget</p>
+                        <p id="product-prc">#109,178</p>
+                        <a href="error.html" target="_blank">View product</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-content">
+                <div class="img">
+                    <img src="/assets/star-fill-svgrepo-com.svg" alt="icon">
+                </div>
+                <div class="texts">
+                    <p>WD 2TB Elements Portable External Hard Drive - USB 3.0</p>
+                    <p class="different">Home and Office Gadget</p>
+                    <p id="product-prc">#109,178</p>
+                    <a href="error.html" target="_blank">View product</a>
+                </div>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="img">
+                    <img src="/assets/star-fill-svgrepo-com.svg" alt="icon">
+                </div>
+                <div class="texts">
+                    <p>WD 2TB Elements Portable External Hard Drive - USB 3.0</p>
+                    <p class="different">Home and Office Gadget</p>
+                    <p id="product-prc">#109,178</p>
+                    <a href="error.html" target="_blank">View product</a>
+                </div>
+            </div>
+
+            <div class="sidebar-content" id="last">
+                <div class="img">
+                    <img src="/assets/star-fill-svgrepo-com.svg" alt="icon">
+                </div>
+                <div class="texts">
+                    <p>WD 2TB Elements Portable External Hard Drive - USB 3.0</p>
+                    <p class="different">Home and Office Gadget</p>
+                    <p id="product-prc">#109,178</p>
+                    <a href="error.html" target="_blank">View product</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main content ends here -->
+    <script src="/script.js"></script>
+</body>
+</html>
