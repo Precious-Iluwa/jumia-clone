@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            #box{
+                height:5em;
+                width:5em;
+                display:none;
+                background-color:red;
+                transition:1s background-color;
+            }
+
+            @media screen and (min-width:600px){
+                #box{
+                    height:10em;
+                    width:10em;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="" >
+    </head>
+    <body>
+        <div class="box" id="box" ></div>
+        <button id="james" >Click me!</button>
+
+    </body>
+    <script>
+        james = document.getElementById("james");
+        james.addEventListener("click", function(){
+            document.getElementById("box").style.display ="block";
+            setTimeout(function(){
+                document.getElementById("box").style.backgroundColor = "blue";
+            }, cs(3));
+        });
+console.log(cs(3));
+        function cs(v){
+            milliseconds = v*1000;
+            return milliseconds;
+        }
+
+        function ocs(v){
+            milliseconds = v*1000;
+            return milliseconds;
+        }
+    </script>
+    <script src="script4_1.js" ></script>
+</html>
